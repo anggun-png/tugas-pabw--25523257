@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!--
+  KERANGKA AWAL — Halaman Profil Saya
+  PABW 2026/2027 · Pertemuan 3
+
+  Cara pakai:
+  1. Salin berkas ini, ganti nama menjadi profil.html
+  2. Ganti setiap tulisan TODO dengan isi milik Anda SENDIRI
+  3. Simpan, lalu buka di peramban (F5 untuk memuat ulang)
+  4. Kerjakan berurutan mengikuti Lembar B, C, D, dan E pada worksheet
+
+  Jangan menghapus komentar TODO sebelum bagian itu Anda kerjakan —
+  komentar itu adalah daftar periksa Anda sendiri.
+-->
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anggun Playlists Song</title>
+</head>
+<body>
+
+  <header>
+    <h1>Anggun Playlists Song</h1>
+    <p>Lagu asyik yang selalu diputar dalam segala suasana.</p>
+      <ul>
+        <li><a href="My Library">My Library</a></li>
+        <li><a href="Music Categories">Music Categories</a></li>
+        <li><a href=" Music Genre">Music Genre</a></li>
+      </ul>
+    </nav>
+  </header>
+ 
+  <main>
+    <section id="My Library">
+      <h2>All my favorite song</h2>
+
+      <table>
+  <caption>Anggun favorite songs</caption>
+  <thead>
+    <tr>
+      <th scope="col">Song</th>
+      <th scope="col">Artis</th>
+      <th scope="col">Genre</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Silence</th>
+      <td>Marshmello, Khalid</td>
+      <td>Dance, Future Trap</td>
+    </tr>
+    <tr>
+      <th scope="row">Beat It</th>
+      <td>Michael Jackson</td>
+      <td>Hard Rock, Dance-Rock, Funk Rock</td>
+    </tr>
+    <tr>
+      <th scope="row">Loser</th>
+      <td>Tame Impala</td>
+      <td>Psychedelic Pop-Funk</td>
+    </tr>
+    <tr>
+      <th scope="row">So Far So Fake</th>
+      <td>Pierce The Veil</td>
+      <td>Pop-Punk</td>
+    </tr>
+  </tbody>
+</table>
+
+<figure>
+  <img src="api musik.jpg"
+       alt="Logo Musik"
+       width="640" height="360" loading="lazy">
+  <figcaption>Logo Musik</figcaption>
+</figure>
+</section>
+ 
+<section id="Recents">
+  <h2>Anggun Top Recents</h2>
+ 
+  <form action="/simpan" method="post">
+    <p>
+      <label for="nama-kolom">Song</label>
+      <input type="text" id="Song" name="Song" required>
+    </p>
+    <p>
+      <label for="nama-kolom">Artis</label>
+      <input type="artis" id="Artis" name="Artis" required placeholder="Marshmello, Khalid">
+    </p>
+    <p>
+      <label for="nama-kolom">Genre Song</label>
+      <input type="genre song" id="Genre Song" name="Genre Song" required placeholder="Pop Punk, Hard-Rock">
+    </p>
+
+    <button type="submit">Save Song</button>
+  </form>
+</section>
+</main>
+ 
+  <footer>
+    <p>Anggun Dwi Suryaningrum · 25523257 · 2026</p>
+  </footer>
+
+
+</body>
+</html>
