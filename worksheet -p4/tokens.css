@@ -11,7 +11,7 @@
   --space-6: 1.5rem;
 
   --radius-md: 0.5rem;
-  --shadow-1: 0 1px 3px rgba(0, 0, 0, .10);
+  --shadow-1: 0 1px 3px rgba(218, 211, 211, 0.546);
 
   --text-sm: 0.875rem;
   --text-md: 1rem;
@@ -23,11 +23,11 @@
 :root {
   --color-bg:       var(--maroon-600);
   --color-fg:       var(--peach-400);
-  --color-surface:  #F4BEBE;
+  --color-surface:  #da9d9dff;
   --color-border:   #FFEBCD;
   --color-primary:  var(--pink-200);
   --color-danger:   #F3DA95;
-  --color-focus:    var(--teal-500);
+  --color-focus:    var(--darkcyan-500);
  
   --card-pad:       var(--space-4);
   --section-gap:    var(--space-6);

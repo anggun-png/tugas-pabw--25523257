@@ -16,10 +16,10 @@ Berbasis Web, satu folder untuk setiap pertemuan.
 | --color-primary | #F4BEBE| tombol, tautan penanda |
 | --color-fg | #FFC7AB | warna teks utama |
 | --color-bg | #7A0000 | latar halaman |
-| --color-surface | #F4BEBE | Latar kartu dan panel, sedikit berbeda dari halaman |
+| --color-surface | #da9d9dff | Latar kartu dan panel, sedikit berbeda dari halaman |
 | --color-border | #FFEBCD | Garis pemisah dan tepi kotak |
 | --color-danger | #F3DA95 | Peringatan dan isian yang tidak sah |
-| --color-focus | #4a9d9d | Garis fokus papan ketik |
+| --color-focus | #104848ff | Garis fokus papan ketik |
 | --space-1 | 0.25rem | Jarak paling rapat, di dalam komponen |
 | --space-2 | 0.5rem | Jarak antar label dan isian |
 | --space-3 | 0.75rem | Jarak di dalam kartu |
@@ -27,7 +27,7 @@ Berbasis Web, satu folder untuk setiap pertemuan.
 | --space-5 | 1.5rem | Jarak antar bagian halaman |
 | --radius-md | 0.5rem | Sudut membulat pada tombol, kartu, isian |
 | --radius-full | 999px| Bentuk pil, misalnya lencana |
-| --shadow-1 | 0 1px 3px rgba(0,0,0,.10) | Bayangan halus kartu |
+| --shadow-1 | 0 1px 3px rgba(218, 211, 211, 0.546) | Bayangan halus kartu |
 | --text-sm | 0.875rem | Keterangan dan teks bantu |
 | --text-md | 1rem | Teks Isi |
 | --text-xl | 1.5rem | Judul Bagian |
