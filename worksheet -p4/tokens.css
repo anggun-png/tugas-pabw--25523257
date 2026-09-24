@@ -32,3 +32,7 @@
   --card-pad:       var(--space-4);
   --section-gap:    var(--space-6);
 }
+
+:root {
+  --blanchedalmond-700: #FFEBCD;      /* ganti dengan warna lain */
+}
