@@ -16,6 +16,10 @@ Berbasis Web, satu folder untuk setiap pertemuan.
 | --color-primary | #F4BEBE| tombol, tautan penanda |
 | --color-fg | #FFC7AB | warna teks utama |
 | --color-bg | #7A0000 | latar halaman |
+| --color-surface | #F4BEBE | Latar kartu dan panel, sedikit berbeda dari halaman |
+| --color-border | #FFEBCD | Garis pemisah dan tepi kotak |
+| --color-danger | #F3DA95 | Peringatan dan isian yang tidak sah |
+| --color-focus | #4a9d9d | Garis fokus papan ketik |
 | --space-1 | 0.25rem | Jarak paling rapat, di dalam komponen |
 | --space-2 | 0.5rem | Jarak antar label dan isian |
 | --space-3 | 0.75rem | Jarak di dalam kartu |
