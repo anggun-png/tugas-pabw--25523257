@@ -18,3 +18,31 @@ Topik halaman saya: koleksi buku di rak saya.
 ## Catatan penggunaan AI
  
 tidak memakai AI.
+
+## Pertemuan 4 — Design token halaman profil
+ 
+- Berkas gaya yang akan dibuat: tokens.css, base.css,
+  layout.css, komponen.css, tema.css
+- Warna utama: #7A0000 (maroon), dipilih karena saya suka warna tersebut
+ 
+### Token yang saya tetapkan
+ 
+| Token | Nilai | Untuk apa |
+|---|---|---|
+| --color-primary | #F4BEBE| tombol, tautan penanda |
+| --color-fg | #FFC7AB | warna teks utama |
+| --color-bg | #7A0000 | latar halaman |
+| --radius-md | 0.5rem | sudut tombol dan kartu |
+| --space-4 | 1rem | jarak standar antar elemen |
+ 
+Kriteria selesai saya: mengubah --color-primary di satu baris
+harus mengubah warna tombol, tautan, judul, dan garis fokus
+
+git add .
+git commit -m "pesan Anda"
+git push
+ 
+# pesan commit yang disarankan:
+# Pertemuan 4: rencana design token di README
+
+
