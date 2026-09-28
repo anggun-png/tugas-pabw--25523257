@@ -18,3 +18,7 @@ h3 { font-size: var(--text-md); }
 /* Batasi panjang baris supaya mata mudah berpindah baris */
 main p { max-width: 60ch; }
 
+img {
+  max-width: 100%;
+  height: auto;
+}

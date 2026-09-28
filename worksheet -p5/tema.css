@@ -10,6 +10,7 @@
     --color-focus:   #104848ff;
     --shadow-1:      0 1px 3px rgba(218, 211, 211, 0.546);
   }
+}
   /* CSS */
    .pengalih-tema { position: absolute; opacity: 0; pointer-events: none; }
 
@@ -25,7 +26,7 @@
      --color-focus:   #FFC000;
 
 }
-}
+
 
 
 

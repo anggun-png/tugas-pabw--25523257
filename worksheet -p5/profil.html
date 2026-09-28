@@ -13,12 +13,14 @@
   komentar itu adalah daftar periksa Anda sendiri.
 -->
 <html lang="id">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Anggun Playlists Song</title>
- 
-  <!-- urutan ini yang benar: token -> dasar -> tata letak -> komponen -> tema -->
+
+  <!-- urutan: token -> dasar -> tata letak -> komponen -> tema -->
   <link rel="stylesheet" href="tokens.css">
   <link rel="stylesheet" href="base.css">
   <link rel="stylesheet" href="layout.css">
@@ -26,93 +28,133 @@
   <link rel="stylesheet" href="tema.css">
 </head>
 
-
 <body>
 
   <header>
-    <input type="checkbox" id="tema" class="pengalih-tema">
-<label for="tema" class="tombol-tema">Tema gelap</label>
-    <h1>Anggun Playlists Song</h1>
-    <p>Lagu asyik yang selalu diputar dalam segala suasana.</p>
-      <ul>
-        <li><a href="My Library">My Library</a></li>
-        <li><a href="Music Categories">Music Categories</a></li>
-        <li><a href=" Music Genre">Music Genre</a></li>
-      </ul>
-    </nav>
+    <div class="header-baris">
+
+      <div>
+        <h1>Anggun Playlists Song</h1>
+        <p>Lagu asyik yang selalu diputar dalam segala suasana.</p>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="#my-library">My Library</a></li>
+          <li><a href="#recents">Music Categories</a></li>
+          <li><a href="#recents">Music Genre</a></li>
+        </ul>
+      </nav>
+
+    </div>
   </header>
- 
-  <main>
-    <section id="My Library">
+
+  <main class="isi">
+
+    <section id="my-library">
+
       <h2>All my favorite song</h2>
 
-      <table>
-  <caption>Anggun favorite songs</caption>
-  <thead>
-    <tr>
-      <th scope="col">Song</th>
-      <th scope="col">Artis</th>
-      <th scope="col">Genre</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">Silence</th>
-      <td>Marshmello, Khalid</td>
-      <td>Dance, Future Trap</td>
-    </tr>
-    <tr>
-      <th scope="row">Beat It</th>
-      <td>Michael Jackson</td>
-      <td>Hard Rock, Dance-Rock, Funk Rock</td>
-    </tr>
-    <tr>
-      <th scope="row">Loser</th>
-      <td>Tame Impala</td>
-      <td>Psychedelic Pop-Funk</td>
-    </tr>
-    <tr>
-      <th scope="row">So Far So Fake</th>
-      <td>Pierce The Veil</td>
-      <td>Pop-Punk</td>
-    </tr>
-  </tbody>
-</table>
+      <div class="katalog">
 
-<figure>
-  <img src="api musik.jpg"
-       alt="Logo Musik"
-       width="640" height="360" loading="lazy">
-  <figcaption>Logo Musik</figcaption>
-</figure>
-</section>
- 
-<section id="Recents">
-  <h2>Anggun Top Recents</h2>
- 
-  <form action="/simpan" method="post">
-    <p>
-      <label for="nama-kolom">Song</label>
-      <input type="text" id="Song" name="Song" required>
-    </p>
-    <p>
-      <label for="nama-kolom">Artis</label>
-      <input type="artis" id="Artis" name="Artis" required placeholder="Marshmello, Khalid">
-    </p>
-    <p>
-      <label for="nama-kolom">Genre Song</label>
-      <input type="genre song" id="Genre Song" name="Genre Song" required placeholder="Pop Punk, Hard-Rock">
-    </p>
+        <article class="kartu">
+          <table>
+            <caption>Anggun favorite songs</caption>
 
-    <button type="submit">Save Song</button>
-  </form>
-</section>
-</main>
- 
+            <thead>
+              <tr>
+                <th scope="col">Song</th>
+                <th scope="col">Artis</th>
+                <th scope="col">Genre</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <th scope="row">Silence</th>
+                <td>Marshmello, Khalid</td>
+                <td>Dance, Future Trap</td>
+              </tr>
+
+              <tr>
+                <th scope="row">Beat It</th>
+                <td>Michael Jackson</td>
+                <td>Hard Rock, Dance-Rock, Funk Rock</td>
+              </tr>
+
+              <tr>
+                <th scope="row">Loser</th>
+                <td>Tame Impala</td>
+                <td>Psychedelic Pop-Funk</td>
+              </tr>
+
+              <tr>
+                <th scope="row">So Far So Fake</th>
+                <td>Pierce The Veil</td>
+                <td>Pop-Punk</td>
+              </tr>
+            </tbody>
+
+          </table>
+
+          <figure>
+            <img src="api musik.jpg"
+                 alt="Logo Musik"
+                 width="640"
+                 height="360"
+                 loading="lazy">
+            <figcaption>Logo Musik</figcaption>
+          </figure>
+
+        </article>
+
+      </div>
+
+    </section>
+
+    <section id="recents">
+
+      <h2>Anggun Top Recents</h2>
+
+      <form class="form-kolom" action="/simpan" method="post">
+
+        <label for="song">Song</label>
+        <input
+          type="text"
+          id="song"
+          name="song"
+          required
+        >
+
+        <label for="artis">Artis</label>
+        <input
+          type="text"
+          id="artis"
+          name="artis"
+          required
+          placeholder="Marshmello, Khalid"
+        >
+
+        <label for="genre">Genre Song</label>
+        <input
+          type="text"
+          id="genre"
+          name="genre"
+          required
+          placeholder="Pop Punk, Hard-Rock"
+        >
+
+        <button type="submit">Save Song</button>
+
+      </form>
+
+    </section>
+
+  </main>
+
   <footer>
     <p>Anggun Dwi Suryaningrum · 25523257 · 2026</p>
   </footer>
-
 
 </body>
 </html>

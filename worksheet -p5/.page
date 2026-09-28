@@ -1,0 +1,9 @@
+<!-- profil.html: satu wadah baru membungkus tiga bagian halaman -->
+<body>
+  <div class="page">
+    <header>…</header>
+    <main>…</main>
+    <footer>…</footer>
+  </div>
+</body>
+

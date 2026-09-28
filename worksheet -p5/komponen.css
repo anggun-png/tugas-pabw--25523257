@@ -50,18 +50,8 @@ input:user-invalid {
 .pesan-galat       { display: none; color: var(--color-danger); font-size: var(--text-sm); }
 .form-kolom:has(input:user-invalid) .pesan-galat { display: block; }
 
-.galeri {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
-  gap: var(--space-4);
-}
 
-.kartu__kaki {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: var(--space-2);
-}
+
 
 
 
