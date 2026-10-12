@@ -120,6 +120,9 @@
     <button type="button" data-kategori="semua">Semua</button>
     <button type="button" data-kategori="selesai">Selesai</button>
     <button type="button" data-kategori="proses">Dalam Proses</button>
+    <button type="button" data-kategori="kosong">
+       Kosong
+    </button>
   </div>
 
   <p id="kosong" hidden>
@@ -127,46 +130,39 @@
   </p>
 
   <ul id="daftar" class="katalog"></ul>
-</section>
+ </section>
 
 
     <section id="recents">
 
       <h2>Anggun Top Recents</h2>
 
-      <form class="form-kolom" action="/simpan" method="post">
-
+      <form class="form-kolom" id="formLagu" novalidate>
         <label for="song">Song</label>
-        <input
-          type="text"
-          id="song"
-          name="song"
-          required
-        >
+        <input type="text" id="song" name="song"
+            aria-describedby="galat-song">
+        <small id="galat-song" class="pesan-galat"
+             aria-live="polite"></small>
 
         <label for="artis">Artis</label>
-        <input
-          type="text"
-          id="artis"
-          name="artis"
-          required
-          placeholder="Marshmello, Khalid"
-        >
-
+        <input type="text" id="artis" name="artis"
+             placeholder="Marshmello, Khalid"
+             aria-describedby="galat-artis">
+        <small id="galat-artis" class="pesan-galat"
+             aria-live="polite"></small>
+   
         <label for="genre">Genre Song</label>
-        <input
-          type="text"
-          id="genre"
-          name="genre"
-          required
-          placeholder="Pop Punk, Hard-Rock"
-        >
+        <input type="text" id="genre" name="genre"
+             placeholder="Pop Punk, Hard-Rock"
+             aria-describedby="galat-genre">
+        <small id="galat-genre" class="pesan-galat"
+             aria-live="polite"></small>
 
-        <button type="submit">Save Song</button>
-
+        <button type="submit" id="tombolSimpan">
+          Save Song
+        </button>
       </form>
-
-    </section>
+     </section>
 
   </main>
 

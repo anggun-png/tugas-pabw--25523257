@@ -71,3 +71,84 @@ const tombolSemua = document.querySelector(
 if (tombolSemua) {
   tandaiTombolAktif(tombolSemua);
 }
+
+
+const formLagu = 
+  document.querySelector("#formLagu");
+const tombolSimpan = 
+  document.querySelector("#tombolSimpan");
+
+const kolomLagu = [
+  {
+    input: document.querySelector("#song"),
+    pesan: document.querySelector("#galat-song"),
+    nama: "judul lagu"
+  },
+  {
+    input: document.querySelector("#artis"),
+    pesan: document.querySelector("#galat-artis"),
+    nama: "artis"
+  },
+  {
+    input: document.querySelector("#genre"),
+    pesan: document.querySelector("#galat-genre"),
+    nama: "genre"
+  }
+];
+
+let sudahDikirim = false;
+
+function periksaKolom(kolom, tampilkanGalat = false) {
+  const sah = kolom.input.value.trim() !== "";
+
+  if (sah) {
+    kolom.input.removeAttribute("aria-invalid");
+    kolom.pesan.textContent = "";
+    kolom.pesan.classList.remove("tampil");
+  } else if (tampilkanGalat) {
+    kolom.input.setAttribute("aria-invalid", "true");
+    kolom.pesan.textContent =
+      "Silakan isi " + kolom.nama + " terlebih dahulu.";
+    kolom.pesan.classList.add("tampil");
+  }
+
+  return sah;
+}
+
+function periksaForm() {
+  const semuaSah = kolomLagu.every((kolom) =>
+    periksaKolom(kolom, sudahDikirim)
+  );
+
+  tombolSimpan.disabled = !semuaSah;
+  return semuaSah;
+}
+
+kolomLagu.forEach((kolom) => {
+  kolom.input.addEventListener("input", () => {
+    periksaForm();
+  });
+});
+
+formLagu.addEventListener("submit", (event) => {
+  event.preventDefault();
+  sudahDikirim = true;
+
+  const semuaSah = periksaForm();
+
+  if (!semuaSah) {
+    const kolomBermasalah = kolomLagu.find(
+      (kolom) => kolom.input.value.trim() === ""
+    );
+
+    if (kolomBermasalah) {
+      kolomBermasalah.input.focus();
+    }
+
+    return;
+  }
+
+  alert("Form lagu berhasil divalidasi!");
+});
+
+periksaForm();

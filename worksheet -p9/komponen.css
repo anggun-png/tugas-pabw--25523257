@@ -51,6 +51,21 @@ input:user-invalid {
 .form-kolom:has(input:user-invalid) .pesan-galat { display: block; }
 
 
+.pesan-galat.tampil {
+  display: block;
+}
+
+input[aria-invalid="true"] {
+  border-color: var(--color-danger);
+  border-width: 2px;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+
 
 
 
