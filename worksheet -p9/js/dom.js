@@ -50,10 +50,13 @@ barisFilter.addEventListener("click", (event) => {
 
   const kategori = tombol.dataset.kategori;
 
-  const terpilih = daftarProyek.filter(
-    (proyek) =>
-      kategori === "semua" || proyek.kategori === kategori
-  );
+  const terpilih = kategori === "kosong"
+  ? []
+  : daftarProyek.filter(
+      (proyek) =>
+        kategori === "semua" ||
+        proyek.kategori === kategori
+    );
 
   render(terpilih);
   tandaiTombolAktif(tombol);
